@@ -1,1 +1,3 @@
 # BattleshipsServer
+
+Client - Server game.
