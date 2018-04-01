@@ -1,0 +1,5 @@
+c:\users\hereisalexius\documents\visual studio 2013\Projects\BattleshipsServer\BattleshipsServer\bin\Debug\BattleshipsServer.exe.config
+c:\users\hereisalexius\documents\visual studio 2013\Projects\BattleshipsServer\BattleshipsServer\bin\Debug\BattleshipsServer.exe
+c:\users\hereisalexius\documents\visual studio 2013\Projects\BattleshipsServer\BattleshipsServer\bin\Debug\BattleshipsServer.pdb
+c:\users\hereisalexius\documents\visual studio 2013\Projects\BattleshipsServer\BattleshipsServer\obj\Debug\BattleshipsServer.exe
+c:\users\hereisalexius\documents\visual studio 2013\Projects\BattleshipsServer\BattleshipsServer\obj\Debug\BattleshipsServer.pdb

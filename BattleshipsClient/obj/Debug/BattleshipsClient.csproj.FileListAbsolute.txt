@@ -1,0 +1,9 @@
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\bin\Debug\BattleshipsClient.exe.config
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\bin\Debug\BattleshipsClient.exe
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\bin\Debug\BattleshipsClient.pdb
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\obj\Debug\BattleshipsClient.Controls.Field.resources
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\obj\Debug\BattleshipsClient.Properties.Resources.resources
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\obj\Debug\BattleshipsClient.csproj.GenerateResource.Cache
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\obj\Debug\BattleshipsClient.exe
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\obj\Debug\BattleshipsClient.pdb
+C:\Users\hereisalexius\Documents\Visual Studio 2013\Projects\BattleshipsServer\BattleshipsClient\obj\Debug\BattleshipsClient.Client.resources
