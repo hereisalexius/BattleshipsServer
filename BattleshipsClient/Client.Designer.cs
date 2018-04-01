@@ -42,7 +42,7 @@
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(98, 23);
             this.clearButton.TabIndex = 2;
-            this.clearButton.Text = "Очистить";
+            this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
@@ -52,7 +52,7 @@
             this.rotateButton.Name = "rotateButton";
             this.rotateButton.Size = new System.Drawing.Size(95, 23);
             this.rotateButton.TabIndex = 3;
-            this.rotateButton.Text = "Повернуть";
+            this.rotateButton.Text = "Rotate";
             this.rotateButton.UseVisualStyleBackColor = true;
             this.rotateButton.Click += new System.EventHandler(this.rotateButton_Click);
             // 
@@ -63,7 +63,7 @@
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(419, 50);
             this.startButton.TabIndex = 4;
-            this.startButton.Text = "Начать";
+            this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
@@ -74,11 +74,12 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Поле опонента";
+            this.label1.Text = "Opponent\'s field";
             // 
             // oponentField
             // 
             this.oponentField.Enabled = false;
+            this.oponentField.Fleet = null;
             this.oponentField.Location = new System.Drawing.Point(232, 48);
             this.oponentField.Name = "oponentField";
             this.oponentField.Size = new System.Drawing.Size(200, 200);
@@ -86,6 +87,7 @@
             // 
             // playerFeld
             // 
+            this.playerFeld.Fleet = null;
             this.playerFeld.Location = new System.Drawing.Point(12, 48);
             this.playerFeld.Name = "playerFeld";
             this.playerFeld.Size = new System.Drawing.Size(200, 200);

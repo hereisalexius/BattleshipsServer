@@ -87,34 +87,34 @@ namespace BattleshipsClient.Game
                     case CMessage.Command.HitShip:
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).SetState(Cell.State.HitShip);
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).Enabled = false;
-                        MessageBox.Show("Ранил!");
+                        MessageBox.Show("Hit!");
                         hasMove = true;
                         break;
                     case CMessage.Command.SinkShip:
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).SetState(Cell.State.SinkShip);
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).Enabled = false;
-                        MessageBox.Show("Потопил!");
+                        MessageBox.Show("Sink!");
                         RepaintOponentShip(msg.Data[0], msg.Data[1]);
                         hasMove = true;
                         break;
                     case CMessage.Command.HitWater:
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).SetState(Cell.State.HitWater);
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).Enabled = false;
-                        MessageBox.Show("Промах!");
+                        MessageBox.Show("Miss!");
                         hasMove = false;
                         break;
                     case CMessage.Command.Lose:
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).SetState(Cell.State.SinkShip);
                         oponentField.GetCellAt(msg.Data[0], msg.Data[1]).Enabled = false;
                         RepaintOponentShip(msg.Data[0], msg.Data[1]);
-                        MessageBox.Show("Победа!");
-                        startButton.Text = "Вы победили.";
+                        MessageBox.Show("Victory!");
+                        startButton.Text = "You won.";
                         isNeedToReceive = false;
                         oponentField.Enabled = false;
                         break;
                     case CMessage.Command.Exit:
-                        MessageBox.Show("Соединение прервано!");
-                        startButton.Text = "Соединение прервано!";
+                        MessageBox.Show("Disconnected!");
+                        startButton.Text = "Disconnected!";
                         isNeedToReceive = false;
                         oponentField.Enabled = false;
                         break;
@@ -125,12 +125,12 @@ namespace BattleshipsClient.Game
                 if (!hasMove && isNeedToReceive)
                 {
                     //Если противник опять ходит/ опять ждём(рекурсивно)
-                    startButton.Text = "Ход противника...";
+                    startButton.Text = "Oponents move...";
                     Wait();
                 }
                 else if (isNeedToReceive)
                 {
-                    startButton.Text = "Ваш ход.";
+                    startButton.Text = "Your move.";
                     oponentField.Enabled = true;
                 }
 
@@ -167,7 +167,7 @@ namespace BattleshipsClient.Game
                     if (!playerField.IsFleetAlive())
                     {
                         //MessageBox.Show("Лузер.");
-                        startButton.Text = "Вы проиграли.";
+                        startButton.Text = "You lose.";
                         //Шлём сообщение о проиграше
                         CMessage resp = new CMessage(CMessage.Command.Lose, (byte)x, (byte)y);
                         client.Send(CMessage.Serialize(resp));

@@ -48,13 +48,13 @@ namespace BattleshipsClient
                 if (client.TryToConnect())
                 {
                     DisableEdition();
-                    startButton.Text = "Ожидание противника...";
+                    startButton.Text = "Waiting for opponent...";
                     waitingConnectionThread.Start();
                     
                 }
-                else { MessageBox.Show("Сервер не отечает!"); }
+                else { MessageBox.Show("Server not respond!"); }
             }
-            else { MessageBox.Show("Поле не заполнено!"); } 
+            else { MessageBox.Show("Your field not filled!"); } 
            
         }
 
@@ -110,13 +110,13 @@ namespace BattleshipsClient
                 isWaiting = false;
                 if (hasMove)
                 {
-                    startButton.Text = "Ваш ход.";
+                    startButton.Text = "Your move.";
                     oponentField.Enabled = true;
                     game.SetMove(true);
                 }
                 else
                 {
-                    startButton.Text = "Ход противника...";
+                    startButton.Text = "Opponents move...";
                     game.Join();
 
                 }
